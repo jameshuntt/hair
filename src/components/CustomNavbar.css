@@ -1,7 +1,10 @@
 .Navbar{
-    background-color: black;
+    background-color: rgb(78, 78, 78);
 }
 
 .search{
     float: left;
+}
+.lastLink{
+    padding-left: 430px;
 }

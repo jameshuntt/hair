@@ -6,7 +6,7 @@ import Pricing from './components/Pricing';
 import About from './components/About';
 import Navbar from './components/CustomNavbar';
 import Footer from './components/Footer';
-import ToggleButtonGroupControlled from './components/Spinner';
+import ParentComponent from './components/AccordionFinal'
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
             </Switch>
             </div>
           </Router>
-          <ToggleButtonGroupControlled />
+          <ParentComponent />
           <Footer />
       </div>
     );

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Nav, Navbar, Form, FormControl, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap' ;
-import './CustomNavbar.css';
+import { LinkContainer } from 'react-router-bootstrap' 
+import './CustomNavbar.css'
 import logo from './assets/logo.png'
 
 class Navigation extends Component {
     render () {
         return (
-            <Navbar className="Navbar" collapseOnSelect expand="lg" bg="dark" variant="dark" float="top">
+            <Navbar className="Navbar" collapseOnSelect expand="lg" variant="dark" float="top">
                 <Navbar.Brand><img src={logo} alt="" style={{width:100, marginTop: -7}} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,7 +27,7 @@ class Navigation extends Component {
                     </LinkContainer>
                     
 
-                    <Dropdown as={ButtonGroup}>
+                    <Dropdown as={ButtonGroup} className="lastLink">
                         <LinkContainer to="/Services">
                             <Nav.Link><Button variant="warning"  >Services</Button></Nav.Link>
                         </LinkContainer>

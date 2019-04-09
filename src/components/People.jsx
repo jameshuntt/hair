@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
 import { Card, Button, Row, Col, Dropdown } from 'react-bootstrap'
 import './People.css'
+import Expand from './Dropdown'
 
 class People extends Component {
     render () {
         return (
             <div>
                 <Row className="People">
-                    <Col xs={12} lg={4} className="Frank">
+                    <Col xs={12} md={4} className="Frank">
                     <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="assets/frank.png" />
                     <Card.Body>
                     <Card.Title>Frank Staltari</Card.Title>
                     <Card.Text>
+                    <Expand />
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                     </Card.Text>
@@ -26,13 +28,26 @@ class People extends Component {
                         <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                     </Dropdown.Menu>
-                    </Dropdown>;
+                    </Dropdown>
                 </Card.Body>
-                </Card>;
+                </Card>
                     </Col>
-                    <Col xs={12} lg={4} className="Sonya">
+                    <Col xs={12} md={4} className="Sonya">
                 <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="assets/girl2.jpg" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                    <Expand />
+                </Card.Body>
+                </Card>
+                    </Col>
+                    <Col xs={12} md={4} className="Someone">
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="assets/girl1.jpg" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -41,20 +56,7 @@ class People extends Component {
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
-                </Card>;
-                    </Col>
-                    <Col xs={12} lg={4} className="Someone">
-                <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>;
+                </Card>
                     </Col>
                     </Row>
             </div>
